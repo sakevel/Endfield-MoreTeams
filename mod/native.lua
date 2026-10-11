@@ -1,6 +1,6 @@
 if not rawget(_G,'ZMLMoreTeams') then
     local U,IO=CS.UnityEngine,CS.System.IO
-    local W={controllers=setmetatable({},{__mode='k'}),disabled={}}
+    local W={controllers=setmetatable({},{__mode='k'}),instances=setmetatable({},{__mode='k'}),disabled={}}
     local function api()return assert(loadstring(LuaManagerInst:LoadLua('ZML/Api'),'@ZML/Api'))()end
     local function report(event,e)
         pcall(function()api().report('more-teams',event)end)
@@ -76,6 +76,7 @@ if not rawget(_G,'ZMLMoreTeams') then
         end end
     end
     local function enabled(args)
+        local z=api();if z.is_enabled and not z.is_enabled("more-teams") then return false end
         if type(args)~='table' or args.lockedTeamData or args.customTeamIndex or args.weekRaidArg or
             (args.dungeonId and args.dungeonId~='') or args.presetTeamId and args.presetTeamId~='' or
             args.initCharInstIdList or args.customSetTeamCallback then return false end
@@ -197,8 +198,23 @@ if not rawget(_G,'ZMLMoreTeams') then
         if W.pendingPhase==s then M.cancel();P.changed()end
     end
     function W.close(s)
+        W.instances[s]=nil
         if W.closeUI then W.closeUI(s)end
         W.controllers[s]=nil
+    end
+    local z=api()
+    if z.register_lifecycle then
+        z.register_lifecycle('more-teams',{
+            prepare=function() return not M.pending and not UIManager:IsShow(PanelId.CharFormation),'请先关闭编队编辑或等待编队切换完成' end,
+            changed=function()
+                local saved={};for s in pairs(W.instances)do saved[#saved+1]=s end
+                for _,s in ipairs(saved)do
+                    W.close(s)
+                    s.m_curTeamIndex=LuaIndex(bag().curTeamIndex)
+                    s:OnPhaseRefresh(s.m_args)
+                end
+            end
+        })
     end
     _G.ZMLMoreTeams=W
 end

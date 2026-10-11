@@ -44,7 +44,10 @@ Language=setmetatable({},{__index=function(_,k)return k end})
 MessageConst=setmetatable({},{__index=function(_,k)return k end})
 Notify=function(k,msg)if k=='SHOW_TOAST'then Mock.errors[#Mock.errors+1]=msg end end
 logger={error=function(e)Mock.errors[#Mock.errors+1]=e end}
-LuaManagerInst={LoadLua=function(_,p)assert(p=='ZML/Api');return 'return {report=function()return true end}'end}
+Mock.runtimeActive=true
+Mock.api={report=function()return true end,is_enabled=function()return Mock.runtimeActive end,register_lifecycle=function(_,h)Mock.lifecycle=h end}
+UIManager={IsShow=function()return Mock.pageShown==true end}
+LuaManagerInst={LoadLua=function(_,p)assert(p=='ZML/Api');return 'return Mock.api' end}
 require_ex=function()return {UICtrl={},PhaseBase={}}end
 PanelId={CharFormation=1};PhaseId={CharFormation=1};PhaseConst=dummy();GEnums=dummy();CameraManager=dummy();UIUtils=dummy();InputManagerInst=dummy()
 Transform={};PhaseManager=dummy();AudioAdapter=dummy();I18nUtils={GetTextRealLength=function(n)return #n end}

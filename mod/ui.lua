@@ -396,7 +396,8 @@ do
             W.paint(s);W.queuePaint(s)
         end
         function W.mount(s)
-            if not W.ctrlEnabled(s)then W.close(s);return end
+            W.instances[s]=true
+            if not W.ctrlEnabled(s)then W.close(s);W.instances[s]=true;return end
             local st=W.controllers[s]
             if st and live(st.root)then W.refresh(s);return end
             local first=assert(s.m_teamCells:GetItem(1),'Native team selector unavailable')

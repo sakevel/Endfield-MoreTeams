@@ -54,3 +54,12 @@ GameInstance.isMainScope=true
 -- Immutable runtime constants: no server squad capacity writes/global index manipulation.
 assert(Tables.globalConst.totalSquadNum==5 and Mock.bag.curTeamIndex==4)
 print('PASS actual transformed current-client save/preview/rename/activation; native 1-4, mapped 5, ack order, failure, locked-context fallback, closing, account separation')
+
+Mock.pageShown=true;assert(not Mock.lifecycle.prepare(false),'open editor defers activation')
+Mock.pageShown=false;assert(Mock.lifecycle.prepare(false))
+local sends=#Mock.sends
+Mock.runtimeActive=false;Mock.lifecycle.changed(false)
+assert(not W.ctrlEnabled(ctrl) and not W.phaseEnabled(phase))
+assert(#Mock.sends==sends,'deactivation never switches/saves server squad')
+Mock.runtimeActive=true;Mock.lifecycle.changed(true)
+print('PASS more-teams safe editor boundary, inactive fallback and no deactivation network request')
