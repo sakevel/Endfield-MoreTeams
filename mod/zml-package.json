@@ -1,0 +1,12 @@
+{
+  "id": "more-teams",
+  "files": [
+    "MoreTeams.dll",
+    "mod.ini",
+    "controller.lua",
+    "native.lua",
+    "ui.lua",
+    "marks.lua",
+    "icon.png"
+  ]
+}

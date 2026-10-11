@@ -1,0 +1,116 @@
+{
+  "source": "image_gen",
+  "sourceFile": "generated-sheet.png",
+  "sourceSha256": "87f73485bca3f9877722eef007ac88bb5a0e2c9cdfec67dc5161b19796651773",
+  "viewBox": 64,
+  "referenceContextSha256": "991aa15ef94c701f9e4e8690c3b4555ee85b7556b257eb82809df0bd88672c62",
+  "references": [
+    {
+      "id": 2,
+      "native": "icon_profession_0",
+      "fileSha256": "161eb7b122a58db294b51d6c879c84efca14d27908836c35a1baec23f8e8910d",
+      "label": "\u8fd1\u536b"
+    },
+    {
+      "id": 3,
+      "native": "icon_profession_2",
+      "fileSha256": "1dc2ae584b6db95b200298727b050c407d52ab21612de4fa76a979e2b8976f62",
+      "label": "\u91cd\u88c5"
+    },
+    {
+      "id": 4,
+      "native": "icon_profession_4",
+      "fileSha256": "ee9883b8792e946c2d162805769ad634485d26664b7ce59a23742d5a414864c3",
+      "label": "\u8f85\u52a9"
+    },
+    {
+      "id": 5,
+      "native": "icon_profession_5",
+      "fileSha256": "b2f189aa2a335918d8cb333dc229a752d7475824ba20e84da1d6364a6d1b2df1",
+      "label": "\u672f\u5e08"
+    },
+    {
+      "id": 6,
+      "native": "icon_profession_7",
+      "fileSha256": "f9837953cf90f99fb6d670a86c6b6bee63811a0bf9aa0f7ea84d836b6eec6ae5",
+      "label": "\u5148\u950b"
+    },
+    {
+      "id": 7,
+      "native": "icon_profession_8",
+      "fileSha256": "0a5eee5cde91b8d8367ffcef17cda7c700b4b35c08c9f3d1d0165232e8001682",
+      "label": "\u7a81\u51fb"
+    },
+    {
+      "id": 8,
+      "native": "icon_map_dungeon",
+      "fileSha256": "68fb471806af44cd212e63f27846923cfb85416c0fffafb8fb1ee45c06777be5",
+      "label": "\u534f\u8bae\u7a7a\u95f4"
+    },
+    {
+      "id": 9,
+      "native": "icon_map_enemyspawner",
+      "fileSha256": "542452451c75d00464d83817a64aa4cf3d108f1f6f685e4391a9c71725b6fd28",
+      "label": "\u80fd\u91cf\u6de4\u79ef\u70b9"
+    },
+    {
+      "id": 10,
+      "native": "icon_map_high_difficulty",
+      "fileSha256": "322e8c07b86d59a9be6aa9ebdac7e52a4ced65686cfc5a345187800c78bd752a",
+      "label": "\u5f71\u62d3\u4e30\u7891"
+    },
+    {
+      "id": 11,
+      "native": "icon_map_boss",
+      "fileSha256": "3ddaa364b53ddec3d3172fd23c3259d67c14fd27033b2f299abfdcbde28f3fea",
+      "label": "\u5371\u5883\u518d\u73b0"
+    },
+    {
+      "id": 12,
+      "native": "icon_map_mini_boss",
+      "fileSha256": "171bbd65003843a8401db1e6a2c5f3e035cb173e68f0a16d764b0840814b03b1",
+      "label": "\u5371\u5883\u788e\u7247"
+    },
+    {
+      "id": 13,
+      "native": "icon_map_weekraid",
+      "fileSha256": "395b9f83b317e0d448572a6d2a9c891e17710738821269e45f9dd482f2ad4f7d",
+      "label": "\u8680\u50cf\u5bfb\u9057"
+    },
+    {
+      "id": 14,
+      "native": "icon_map_seasontower",
+      "fileSha256": "a93f96b511b556c14a6d924ce398143359c87e0dc8801920aa0438bae3c5ca3b",
+      "label": "\u6218\u4e89\u56de\u54cd"
+    },
+    {
+      "id": 15,
+      "native": "icon_map_simulation_training",
+      "fileSha256": "d2a4e0be53b64ffceb3f962f40afc6e8452528e76f4cc40c2ae1f55363eba04f",
+      "label": "\u6f14\u6b66\u5e73\u53f0"
+    },
+    {
+      "id": 16,
+      "native": "icon_map_dungeon_worldlevel",
+      "fileSha256": "c174e2c70759de05e96458bc03069dcf6bf2f9ce84231fa5e7aca07ab1b446eb",
+      "label": "\u534f\u8bae\u7a7a\u95f4\u00b7\u63a2\u7d22\u7b49\u7ea7"
+    }
+  ],
+  "ids": {
+    "2": "guard",
+    "3": "defender",
+    "4": "support",
+    "5": "caster",
+    "6": "vanguard",
+    "7": "striker",
+    "8": "protocol",
+    "9": "energy",
+    "10": "monument",
+    "11": "danger",
+    "12": "fragment",
+    "13": "relic",
+    "14": "echo",
+    "15": "training",
+    "16": "exploration"
+  }
+}

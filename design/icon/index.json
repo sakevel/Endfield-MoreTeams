@@ -1,0 +1,27 @@
+{
+  "source": "image_gen",
+  "sourceFile": "generated.png",
+  "sourceSha256": "2d3ddc416e096a458b6683a2ee2953c84435c4bc75e9d3ed8e8ad2c072f6fadf",
+  "iconSha256": "550ef766635400080a3cf6446a84e670f2adc382f5045a3173409f98c61512aa",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "iconSize": [
+    256,
+    256
+  ],
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "bounds": [
+    5,
+    16,
+    226,
+    240
+  ],
+  "visibleFraction": 0.4740753173828125,
+  "processing": "System.Drawing high-quality bicubic resize only; preserve generated alpha",
+  "prompt": "Use case: logo-brand. Asset type: one finished square mod icon for Arknights Endfield 'More Teams', used at 48–64 px in a mod list. Create a beautiful cohesive flat industrial tactical UI emblem, NOT an illustration or a mockup. Transparent background. Centered compact emblem with generous transparent outer padding. Outer badge is an angular broken hexagonal frame in medium gray (#858585) around a charcoal (#313131) solid hexagonal interior; subtly isometric cut corners, same visual vocabulary as Endfield native industrial icons. Main symbol in near-white (#f2f2f2): three overlapping angular squad cards, arranged as a clean compact fan/stack. Front card carries three simplified geometric operator busts (hexagonal/angular heads over broad shoulder silhouettes), recognizable as a squad, with the two offset cards visible behind it suggesting multiple stored squads. Use broad solid shapes and very thick crisp strokes, strong negative space, minimal details; professional balanced symmetry and clean intentional overlap. One tiny vivid Endfield yellow (#ffef00) triangular accent at the lower-right frame edge, about 5% of the icon area. The entire central card/people symbol must remain legible at 48 px. No text, no numbers, no letters, no thin linework, no tiny grid of 20 items, no controller, no gear, no gradients, no shadows, no lighting, no photorealism, no background scene, no watermark. Output ONLY one isolated finished icon with true alpha transparency."
+}
